@@ -1,0 +1,14 @@
+The boundaries change how the cells behave, in specific it kills off the “Gliders”, or the layouts that go around the screen in perpetuity. 
+It also killed off sevel layouts that otherwise would turn into stable squares, depending on where you start and the design you began with. 
+
+The patterns that emerge after sufficient time are weird flower shapes that eventually break down into 3 long rectangles that continually flip over and over and stable squares, 
+although there is almost always a “colony” moving around that makes contact with one of these stable states and destroys them, leaving a new system that eventually breaks
+back down into a stable pattern. When I set P = 20, I got colonies that move around the screen for awhile before most of them broke down into a pattern with 2 on top, one to the 
+right and down 1, one to the left and down 1, and then 2 in parallel with the 2 on top. There are several “Colonies” that move around for awhile before this happens, however.
+At P=70 almost immediately all the cells die, giving a couple stable patterns and one that bloomed out into a flower and eventually lead to a very similar situation to the P=50 
+test case.
+
+The graph below shows what I got when I began with P=50. The left side is the Density(as a percent of cells alive) and the bottom in the iteration (frame) of the animation. 
+From this data it is reasonable to assume that the steady state is around <15 % density, thats where it hits and then somewhat stabilizes. I ran this twice with 50 frames and 
+then 100 frames to confirm that it doesn’t really hit a stable amount.
+
